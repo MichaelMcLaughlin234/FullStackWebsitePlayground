@@ -53,28 +53,50 @@
     <!-- width, height, and alt are optional but best practice -->
     <br><abbr title="This Is A Dog">TIAD</abbr>
     <p style="color:red;">This is a red paragraph.</p>
+    <p style ="color:green;text-align:center">Centered green paragraph.</p>
+    <!-- color: text-align: font-size: background-color: border:(border style required, can take three arguments - width style color) -->
     <p><b>This is a bold paragraph.</b></p>
     <p><u>This is an underlined paragraph.</u></p>
     <p><i>This is a paragraph in italics.</i></p>
     <p title="I'm a tooltip">This is a paragraph with text when hovered over.</p>
     <h6 id="S2">This is a section of the page</h1>
-    <ol>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
+    <div style="color:gray"> <!-- block element that sections off part of the page -->
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </div>
   
-    <video controls<!--basic play/pause-->><source src="Silly Symphonies - The Skeleton Dance.mp4" type="video/mp4">Text shown if video format isn't supported</video>
+    <video muted controls autoplay><source src="Silly Symphonies - The Skeleton Dance.mp4" type="video/mp4">Text shown if video format isn't supported</video>
     <audio><source src="file.mp3" type="audio/mpeg">Text for is audio is unsupported</audio>
     <!-- controls autoplay loop muted -->
   
     <!-- the <strong></strong> tag is used to show important text to screen readers -->
     <!-- the <em></em> tag emphasizes text for screen readers -->
+
+    <table style="border:solid">
+      <tr>
+        <th>Column 1</th><th>Column 2</th>
+      </tr>
+      <tr> 
+        <td style="border:dashed">
+        C1</td>
+        <td style="border:dotted">
+        C2</td>
+      </tr>
+      <tr> 
+        <td style="border:solid">
+        C3</td>
+        <td style="border:solid">
+        C4</td>
+      </tr>
+    </table><!-- use colspan="x" and rowspan="x" in <td> tag to merge columns/rows -->
     
     <script src="script.js"></script>
   </main>
