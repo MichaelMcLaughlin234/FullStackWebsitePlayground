@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- internal CSS -->
+  <style>
+    h2{
+      color: navy;
+    }
+    /* using ID to target styling 
+       use class for multiple elements instead of ID*/
+    #boldp{
+      color: purple;
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -55,7 +68,7 @@
     <p style="color:red;">This is a red paragraph.</p>
     <p style ="color:green;text-align:center">Centered green paragraph.</p>
     <!-- color: text-align: font-size: background-color: border:(border style required, can take three arguments - width style color) -->
-    <p><b>This is a bold paragraph.</b></p>
+    <p id="boldp"><b>This is a bold paragraph.</b></p>
     <p><u>This is an underlined paragraph.</u></p>
     <p><i>This is a paragraph in italics.</i></p>
     <p title="I'm a tooltip">This is a paragraph with text when hovered over.</p>
